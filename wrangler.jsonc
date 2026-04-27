@@ -93,21 +93,21 @@
     ]
   },
 
-"migrations": [
-  {
-    "tag": "v1",
-    "new_sqlite_classes": [
-      "RoomDurableObject", 
-      "SyncDurableObject", 
-      "FederationDurableObject",
-      "CallRoomDurableObject",
-      "AdminDurableObject",
-      "UserKeysDurableObject",
-      "PushDurableObject",
-      "RateLimitDurableObject"
-    ]
-  }
-],
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "RoomDurableObject",
+        "SyncDurableObject",
+        "FederationDurableObject",
+        "CallRoomDurableObject",
+        "AdminDurableObject",
+        "UserKeysDurableObject",
+        "PushDurableObject",
+        "RateLimitDurableObject"
+      ]
+    }
+  ],
 
   // Environment variables
   "vars": {
@@ -117,27 +117,6 @@
     "LIVEKIT_API_KEY": "devkey",
     "LIVEKIT_URL": "wss://livekit.easydemo.org"
   },
-
-  // Secrets should be set using:
-  // npx wrangler secret put TURN_API_TOKEN
-  // npx wrangler secret put CALLS_APP_ID
-  // npx wrangler secret put CALLS_APP_SECRET
-  // npx wrangler secret put LIVEKIT_API_SECRET
-  //
-  // For email verification (3PID) via Cloudflare Email Service:
-  // npx wrangler secret put EMAIL_FROM       # From address (e.g., "noreply@m.easydemo.org")
-  //
-  // For direct APNs push notifications (optional - bypasses Sygnal):
-  // npx wrangler secret put APNS_KEY_ID      # Key ID from Apple Developer Portal
-  // npx wrangler secret put APNS_TEAM_ID     # Apple Developer Team ID
-  // npx wrangler secret put APNS_PRIVATE_KEY # Contents of .p8 file
-  // npx wrangler secret put APNS_ENVIRONMENT # "production" or "sandbox" (default: production)
-  //
-  // To create a Cloudflare Realtime SFU app:
-  // 1. Go to https://dash.cloudflare.com/?to=/:account/calls
-  // 2. Create a new Realtime App
-  // 3. Copy the App ID and App Secret
-  // Or use the API: https://developers.cloudflare.com/api/resources/calls/subresources/sfu/methods/create/
 
   // Custom domain routing
   "routes": [
@@ -156,7 +135,12 @@
   ],
 
   // Cloudflare Email Service for 3PID email verification
-  "send_email": [{ "name": "EMAIL", "remote": true }],
+  "send_email": [
+    {
+      "name": "EMAIL",
+      "remote": true
+    }
+  ],
 
   // Cloudflare Workflows for durable multi-step operations
   "workflows": [
