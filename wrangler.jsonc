@@ -111,7 +111,7 @@
 
   // Environment variables
   "vars": {
-    "SERVER_NAME": "m.easydemo.org",
+    "SERVER_NAME": "m.unikunu.com",
     "SERVER_VERSION": "0.1.0",
 //    "TURN_KEY_ID": "42586a3b6b8415d1e69e825f169f3108",
 //    "LIVEKIT_API_KEY": "devkey",
@@ -121,7 +121,7 @@
   // Custom domain routing
   "routes": [
     {
-      "pattern": "m.easydemo.org",
+      "pattern": "m.unikunu.com",
       "custom_domain": true
     }
   ],
