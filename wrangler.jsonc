@@ -15,7 +15,7 @@
     {
       "binding": "DB",
       "database_name": "tuwunel-db",
-      "database_id": "36b31035-03de-40ed-8940-753d325bae27"
+      "database_id": "d1e77b8d-1a69-405d-9d41-cbae25e13929"
     }
   ],
 
@@ -162,7 +162,7 @@
   "vpc_services": [
     {
       "binding": "LIVEKIT_API",
-      "service_id": "019b6a8b-4d9e-7751-bef5-7d9a3f1807a9"
+      "service_id": "019dcc62-e7e6-7243-876e-defb0b4cf25b"
     }
   ],
 
