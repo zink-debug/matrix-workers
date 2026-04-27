@@ -4,7 +4,7 @@
   "main": "src/index.ts",
   "compatibility_date": "2024-11-01",
   "compatibility_flags": ["nodejs_compat"],
-  "account_id": "870e8509c92b6115e64a0cd8bb95ea97",
+  "account_id": "d8e8de2a15bfe7545c581c4605e75b9c",
 
   "observability": {
     "enabled": true
@@ -23,19 +23,19 @@
   "kv_namespaces": [
     {
       "binding": "SESSIONS",
-      "id": "366e0561b7054c2ebb07ceb44e8f92a5"
+      "id": "bd6e556cb2094e58ad90d4663bf5236b"
     },
     {
       "binding": "DEVICE_KEYS",
-      "id": "9c44be58428049ddbc69727e0e0ff3ef"
+      "id": "3330225719404418b1c8bac6468e6eb6"
     },
     {
       "binding": "CACHE",
-      "id": "121081991bbb4b44806dd973ea185404"
+      "id": "262ca18d2b2547f7b431719b6b93b4e2"
     },
     {
       "binding": "CROSS_SIGNING_KEYS",
-      "id": "b3f387bf735b4fc684a25656f1808abc"
+      "id": "3e621abbe4a34e93b3923e0409afc4fa"
     },
     {
       "binding": "ACCOUNT_DATA",
@@ -43,7 +43,7 @@
     },
     {
       "binding": "ONE_TIME_KEYS",
-      "id": "c3739acd328748f5a966c3b7ff2a6352"
+      "id": "7fdfed54cf764d1f84b4828335fae4a5"
     }
   ],
 
@@ -51,7 +51,7 @@
   "r2_buckets": [
     {
       "binding": "MEDIA",
-      "bucket_name": "tuwunel-media"
+      "bucket_name": "matrix-worker-media"
     }
   ],
 
